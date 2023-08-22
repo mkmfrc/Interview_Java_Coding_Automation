@@ -25,7 +25,7 @@ public class DropDown {
 	// 1st way and Easy Way
 		
 		//1. First I have to create an object of Select Class 
-		//and on parameter I am passing the dropDownElement location using xpath 
+		//and on parameter I am passing the dropDownElement location using locator 
 		
 	Select obj = new Select(driver.findElement(By.id("oldSelectMenu")));
 		
