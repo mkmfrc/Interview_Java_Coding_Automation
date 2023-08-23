@@ -1,7 +1,7 @@
 package automation.challengesFinal;
 
-//import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.lessThan;
 
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
@@ -43,20 +43,20 @@ import org.testng.annotations.Test;
 		
 		//queryString = specific user/requirement "2";
 		public String queryString = "2";
-		/*
+		
 		@Test
 		public void getReadTheDataFromServer() {
 			
 			//2. Given() method is prerequisites to pass the param() to check the Content Type  which is JSON or XML
-			// given().param("Content-Type", "application/json; charset=utf-8")
+			given().param("Content-Type", "application/json; charset=utf-8")
 			 
 			 //3. When() method to provide the action where I select the CURD operation method 
 			 //and pass(domain+URI+queryString)as parameter
-			//.when().get(domain+URI+queryString)
+			.when().get(domain+URI+queryString)
 			
 			//4. Then() method is to validate all the required validation point
 			//Example: Status Code, Status Line, Body, Contain Type, Response Time, Response Size and many more 
-		//	.then().assertThat()
+			.then().assertThat()
 			 .statusCode(200)
 			.statusLine("HTTP/1.1 200 OK")
 			.time(lessThan(900l) )
@@ -67,5 +67,5 @@ import org.testng.annotations.Test;
 			
 			//5. In oder to print the value in console i have to use the .log().all() method 
 			.log().all();
-		}*/
+		}
 	}
