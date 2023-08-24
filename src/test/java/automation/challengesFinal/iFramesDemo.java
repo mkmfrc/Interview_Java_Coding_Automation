@@ -2,6 +2,7 @@
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,14 +17,17 @@ public class iFramesDemo {
 
 		driver.get("http://www.dwuser.com/education/content/the-magical-iframe-tag-an-introduction/");
 		
+		//First I have to identify the Frame using Locator 
+		//and storing into a WebElement object
+		WebElement iframe = driver.findElement(By.xpath("//div[@id='eduFooterWrap']//iframe[1]"));
 		
 		//To handle the frame i have to use driver.switchTo().frame() method
-		//and on the frame() parameter im locating the exact frame using xpath
-		driver.switchTo().frame(driver.findElement(By.xpath("//div[@id='eduFooterWrap']//iframe[1]")));
+		//and on the frame() parameter i have to pass that WebElement object
+		driver.switchTo().frame(iframe);
 		
-		//This is how i can skip the frame and locate my desired element.
+		//This is how i take control of the frame and perform any action with my desired element.
 		 
-		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("SoftwareTestingHelp.com");
+		// driver.findElement(By.xpath("//input[@name='name']")).sendKeys("SoftwareTestingHelp.com");
 	}
 
 }

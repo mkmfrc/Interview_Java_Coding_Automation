@@ -8,24 +8,26 @@ package automation.challengesFinal;
 	import org.openqa.selenium.chrome.ChromeDriver;
 
 	public class AlertPopup {
+		
+		
 	    public static void main(String[] args) {
 	        
 	        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 	        WebDriver driver = new ChromeDriver();
 	        driver.get("https://example.com");
+	      driver.findElement(By.id("trigger-button")).click();
 
-	        
-	        // Find and click a button/link that triggers the alert
-	        driver.findElement(By.id("trigger-button")).click();
-
-	        // Switch to the alert popup
+	      //Alert Handle
+	      
+	        // First Creating the Alert Interface instance 
+	        //than driver.switchTo() & alert() methods I will take control of the alert popup
 	        Alert alert = driver.switchTo().alert();
 
-	        // Get the text of the alert message
+	        // By calling getText() method to get the text of the alert message
 	        String alertMessage = alert.getText();
-	        System.out.println("Alert Message: " + alertMessage);
-
-	        // Accept the alert (click OK)
+	       // System.out.println("Alert Message: " + alertMessage);
+	        
+	        // Finally Accept or Dismiss the alert 
 	        alert.accept();
 
 	        // Close the WebDriver

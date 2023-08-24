@@ -24,21 +24,26 @@ public class DropDown {
 	
 	// 1st way and Easy Way
 		
-		//1. First I have to create an object of Select Class 
-		//and on parameter I am passing the dropDownElement location using locator 
+		//First I have to identify the dropDown using Locator 
+				//and storing into a WebElement object
 		
-	Select obj = new Select(driver.findElement(By.id("oldSelectMenu")));
+		WebElement dropDown = driver.findElement(By.id("oldSelectMenu"));
+		
+		//1. Now  declaring the Select Class Object
+			//and on parameter I am passing the WebElement object
+			
+			Select obj = new Select(dropDown);
 		
 		//2. Now using Select class object I can call selectByIndex() and pass the index number
 		//or selectByVisibleText() or selectByValue()
 		
-	obj.selectByIndex(1);
+			obj.selectByIndex(1);
 		
 		//or 
-	obj.selectByVisibleText("Blue"); 
+			obj.selectByVisibleText("Blue"); 
 		
 		//or
-	obj.selectByValue("1");
+			obj.selectByValue("1");
 		
 	
 		 

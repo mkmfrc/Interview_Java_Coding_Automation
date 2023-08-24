@@ -40,8 +40,8 @@ public class RadioButton_CheckBox {
 		WebElement green1 = driver.findElement(By.xpath("//input[@name='green']"));
 		
 	if (green1.isEnabled() && green1.isDisplayed()) {
-		// Using System.out.println method, we will display a message that will indicate
-		// whether the verification was successful or not.
+		
+		// If condition matches or not matches related text will be displayed
 		System.out.println("Radio button is enabled and visible");
 	} else {
 		System.out.println("Radio button is disabled and invisible");
