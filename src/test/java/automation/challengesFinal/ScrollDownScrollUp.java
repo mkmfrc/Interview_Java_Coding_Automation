@@ -18,11 +18,8 @@ public class ScrollDownScrollUp {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 
-		// JavascriptExecutor js = (JavascriptExecutor) driver;
-		// WebElement ele = driver.findElement(By.xpath(""));
-		 //js.executeScript("arguments[0].scrollIntoView();", ele);
-		 //js.executeScript("window.scrollBy(0,1500)");
-		 
+		//First way for Interview 
+		
 		//1. First creating an Actions class object and pass the driver as parameter
 		 Actions ac = new Actions(driver);
 		 
@@ -31,5 +28,13 @@ public class ScrollDownScrollUp {
 		 
 		 ac.sendKeys(Keys.PAGE_DOWN).build().perform();
 		 
+		 
+		 //Second way: (using JavascriptExecutor)
+		 
+		// JavascriptExecutor js = (JavascriptExecutor) driver;
+			// WebElement ele = driver.findElement(By.xpath(""));
+			 //js.executeScript("arguments[0].scrollIntoView();", ele);
+			 //js.executeScript("window.scrollBy(0,1500)");
+			 
 	}
 }

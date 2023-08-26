@@ -29,7 +29,7 @@ public class RadioButton_CheckBox {
 		green.click();
 
 	} else {
-		System.out.println("Something is wrong, 'Green' option is not selected");
+		System.out.println("Green is already selected");
 	}
 
 	

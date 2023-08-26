@@ -25,10 +25,9 @@ public class MultipleWindowHandle {
 		driver.findElement(By.id("windowButton")).click();
 		driver.findElement(By.id("windowButton")).click();
 		driver.findElement(By.id("windowButton")).click();
-		
-		
+				
         //1st i can take a control main window with the help 
-		//driver.getWindowHandle()method and store in string variable
+		//driver.getWindowHandle()method and store in a String object/variable
 		String mainWindow = driver.getWindowHandle();
 
 		// 2nd i can take a control all of the child window with help of 
@@ -36,25 +35,24 @@ public class MultipleWindowHandle {
 		Set<String> childWindow = driver.getWindowHandles();
 
 		
-		// 3rd With the help set instance i can call iterator() method to go through
-		// all child window and store in to Iterator instance
-		Iterator<String> it = childWindow.iterator();
+		// 3rd With the help set instance i can call iterator() method to go through all child windows 
+		// and store into Iterator instance
+		Iterator<String> iterator = childWindow.iterator();
 
 		
 		// 4th with help of while loop i can pass the hasNext() method
 		// so that ignore the main window.
-		while (it.hasNext()) {
+		while (iterator.hasNext()) {
 			
-			// 5th then i can call the next(); method count all the child window
+			// 5th then i can call the next() method count all the child window
 			// And store into the string variable.
-			String child = it.next();
+			String child = iterator.next();
 
 		// 6th i write down the if condition and pass the argument
 			// to close the child window with the help of driver.switchTo() method
 	
-			if (!mainWindow.equalsIgnoreCase(child)) {
+			if (!mainWindow.equals(child)) {
 				driver.switchTo().window(child);
-				Thread.sleep(5000);
 				driver.close();
 			}
 		}

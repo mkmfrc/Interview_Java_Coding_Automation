@@ -19,15 +19,19 @@ public class iFramesDemo {
 		
 		//First I have to identify the Frame using Locator 
 		//and storing into a WebElement object
-		WebElement iframe = driver.findElement(By.xpath("//div[@id='eduFooterWrap']//iframe[1]"));
+		WebElement frameObj = driver.findElement(By.xpath("//div[@id='eduFooterWrap']//iframe[1]"));
 		
 		//To handle the frame i have to use driver.switchTo().frame() method
 		//and on the frame() parameter i have to pass that WebElement object
-		driver.switchTo().frame(iframe);
+		
+		driver.switchTo().frame(frameObj);
+		
+		//To switch back to parent frame (if that frame is within another frame)
+		// driver.switchTo().defaultContent();
 		
 		//This is how i take control of the frame and perform any action with my desired element.
 		 
-		// driver.findElement(By.xpath("//input[@name='name']")).sendKeys("SoftwareTestingHelp.com");
+		// driver.findElement(By.xpath("//input[@name='name']")).sendKeys("fdfdf");
 	}
 
 }

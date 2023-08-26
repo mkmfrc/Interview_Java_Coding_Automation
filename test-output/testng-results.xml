@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-26T23:14:18Z" name="Default suite" finished-at="2023-08-26T23:14:18Z" duration-ms="35">
+    <groups>
+    </groups>
+    <test started-at="2023-08-26T23:14:18Z" name="Default test" finished-at="2023-08-26T23:14:18Z" duration-ms="35">
+      <class name="JavaCodingFinal.FibunacciNumber">
+        <test-method signature="fibunacciNumber()[pri:0, instance:JavaCodingFinal.FibunacciNumber@7d446ed1]" started-at="2023-08-26T23:14:18Z" name="fibunacciNumber" finished-at="2023-08-26T23:14:18Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fibunacciNumber -->
+      </class> <!-- JavaCodingFinal.FibunacciNumber -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

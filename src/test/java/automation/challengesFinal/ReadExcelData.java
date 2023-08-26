@@ -14,13 +14,8 @@ public class ReadExcelData {
 
 	// How to read excel in automation?
 	// Ans: 1st I need Apache POI dependencies
-	@SuppressWarnings("resource")
-	public static void main(String[] args) throws Throwable {
-		// deserialization
-		// FileOutputStream output = new FileOutputStream(".xls");
 
-		// serialization
-		
+	public static void main(String[] args) throws Throwable {
 		
 		//1. First i have to create an object using FileInputStream Class
 		//and pass the argument as location of the Excel file
@@ -37,7 +32,7 @@ public class ReadExcelData {
 		//3. With the help of XSSFWorkbook object i can call the getSheet() method
 		//and pass the sheet name then take control of the sheet data 
 		//with the help of XSSFSheet object
-		XSSFSheet sheet = wb.getSheet("testData");
+		XSSFSheet sheet = wb.getSheet("SheetName");
 
 		
 		//4. With the help of XSSFSheet obj i can call the Iterator() method to go through all the data
@@ -57,6 +52,14 @@ public class ReadExcelData {
 			data.add(rowiterator.next().getCell(1).getStringCellValue());
 			System.out.println(data);
 		}
+		
+		
+		
+		// deserialization
+				// FileOutputStream output = new FileOutputStream(".xls");
 
+				// serialization
+				
+				
 	}
 }

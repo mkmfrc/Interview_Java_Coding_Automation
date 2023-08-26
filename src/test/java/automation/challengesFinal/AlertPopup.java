@@ -27,8 +27,10 @@ package automation.challengesFinal;
 	        String alertMessage = alert.getText();
 	       // System.out.println("Alert Message: " + alertMessage);
 	        
+	        alert.sendKeys("7989");
+	        
 	        // Finally Accept or Dismiss the alert 
-	        alert.accept();
+	        alert.accept(); // alert.dismiss();
 
 	        // Close the WebDriver
 	        driver.quit();

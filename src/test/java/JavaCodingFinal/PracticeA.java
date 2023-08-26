@@ -1,10 +1,82 @@
 package JavaCodingFinal;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.testng.annotations.Test;
+
+import cucumber.api.cli.Main;
 
 public class PracticeA {
 
-	@Test
+	
+	//How to merge arrays?
+	//@Test
+	void mergeArray(){
+		
+		
+		String [] winter = {"W", "I", "N", "T", "E", "R"};
+		
+		String [] spring = {"S", "P", "R", "I", "N", "G"};
+		
+		
+		ArrayList <String> season = new ArrayList<>(Arrays.asList(winter));
+		
+		season.addAll(Arrays.asList(spring));
+		
+		Object[] mergeValue = season.toArray();
+		
+		System.out.println(Arrays.toString(mergeValue));
+		
+	}
+	
+	//Create one return method which returns either true or false if number is greater or less?
+	
+	
+		public static boolean greaterNumber(int num) {
+			
+			if(num > 10) {
+				return true;
+			}else {
+				
+				return false;
+			}
+		}
+			
+		public static void main(String[] args) {
+			
+			System.out.println(greaterNumber(10));
+			
+		}
+			
+			
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//@Test
 	void swapValue() {
 		
 		// i need to declare two separate variable x and y and pass my value there
