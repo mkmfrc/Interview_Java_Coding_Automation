@@ -1,6 +1,6 @@
 package JavaCodingFinal;
 
-public class DuplicateValue {
+public class DuplicateValueFromArray {
 
 	// Question 7: How to find the duplicate value from Array without any predefined
 	// method or functions?

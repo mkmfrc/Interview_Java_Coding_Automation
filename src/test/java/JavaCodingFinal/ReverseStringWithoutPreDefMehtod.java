@@ -19,18 +19,22 @@ public class ReverseStringWithoutPreDefMehtod {
 		}
 	}
 	
-	void practice() {
-
+	//OtherWay to reverse the string using predefined method
+	
+	void reverseSTringBuilder() {
+		String name = "RAKIB";
+		
+		//Declaring StringBuilder i am creating an object and passing the string varibale
+		StringBuilder obj = new StringBuilder(name);
+		
+		//Using objectName i am calling reverse() method to reverse the string and get the desired value
+		System.out.println(obj.reverse());
+		
 	}
 	
-	/*
-	//OtherWay to reverse the string using predefined method
-	//Declaring StringBuilder i am creating an object and passing the string varibale
-	StringBuilder obj = new StringBuilder(str);
 	
-	//Using objectName i am calling reverse() method to reverse the string and get the desired value
-	System.out.println(obj.reverse());
-	*/
+
+	
 }
 
 

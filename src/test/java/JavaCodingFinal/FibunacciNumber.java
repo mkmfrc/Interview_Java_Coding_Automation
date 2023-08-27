@@ -17,7 +17,7 @@ public class FibunacciNumber {
 	@Test
 	public void fibunacciNumber() {
 		
-		int num = 10;
+		int num = 10; 
 		int first = 0;
 		int sec = 1;
 		

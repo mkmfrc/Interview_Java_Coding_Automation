@@ -8,14 +8,17 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ReadExcelData {
+public class ApachePOI_ReadExcelData {
 
-	final static String filePath = "./TestData/ExcelData.xlsx";
+	
 
 	// How to read excel in automation?
 	// Ans: 1st I need Apache POI dependencies
 
 	public static void main(String[] args) throws Throwable {
+		
+		//Declaring A String Variable and storing the filePath
+		 String filePath = "./TestData/ExcelData.xlsx";
 		
 		//1. First i have to create an object using FileInputStream Class
 		//and pass the argument as location of the Excel file

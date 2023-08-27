@@ -26,7 +26,7 @@ public class OccuringString {
 			// now using IF/Else condition I am taking the control of Key & Value pair
 			// with the help of containsKey() and put() methods 
 			//then i get the desired outcome
-			if (map.containsKey(count)) {
+		if (map.containsKey(count)) {
 				map.put(count, map.get(count) + 1);
 			} else {
 				map.put(count, 1);
@@ -34,6 +34,10 @@ public class OccuringString {
 		}
 		System.out.println("Number of Character : " + map);
 	}
+	
+	
+	
+	
 	
 	//Practice
 	// Q: Occurring value? 
