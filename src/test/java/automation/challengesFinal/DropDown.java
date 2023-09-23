@@ -61,10 +61,6 @@ public class DropDown {
 
 	}
 
-	
-	
-
-
 	public static void getDropDown(List<WebElement> ele, String text) {
 		ele = driver.findElements(By.xpath("//*[@id='oldSelectMenu']/option"));
 		// System.out.println("Total size of vale : "+ele.size());

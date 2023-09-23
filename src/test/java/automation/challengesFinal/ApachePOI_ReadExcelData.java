@@ -48,7 +48,7 @@ public class ApachePOI_ReadExcelData {
 		//6. I have to create an ArrayList obj to handle the multiple data from Excel
 		List<String> data = new ArrayList<String>();
 
-		//7. I have to create a loop to looping all data and ignore the header
+		//7. I have to create a loop to looping all data and again ignore the header using hasNext()
 		while (rowiterator.hasNext()) {
 		
 			//8. With the help of ArrayList obj i can read the file using getCell() method by index number
