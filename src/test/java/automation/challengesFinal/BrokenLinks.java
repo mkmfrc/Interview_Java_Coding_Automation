@@ -21,14 +21,19 @@ public class BrokenLinks {
 
 		driver.get("http://www.google.co.in/");
 
+	//1. Identifying the link element and store into List of WebElement
 		List<WebElement> links = driver.findElements(By.tagName("a"));
-		links.size(); // to know the link count
 
+	//2. Use the loop to go through all the links
 		for (int i = 0; i < links.size(); i++) {
 
+	//2. Retrieve the WebElement at index 'i' using get()
 			WebElement ele = links.get(i);
+			
+	//3.getAttribute("href") to identify the exact link 
 			String linkUrl = ele.getAttribute("href");
 
+	//4. 
 			URL url = new URL(linkUrl);
 			HttpURLConnection httpUrl = (HttpURLConnection) url.openConnection();
 			httpUrl.connect();
@@ -44,6 +49,7 @@ public class BrokenLinks {
 		}
 	}
 
+	//Second: Directly from URL
 	public static void verifyLinkActive(String linkUrl) {
 		try {
 

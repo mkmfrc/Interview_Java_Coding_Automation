@@ -19,7 +19,6 @@ public class DragAndDrop {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 	
-	
 		//1. First I have to identify the element using xpath 
 		//that need to drag and store in into a WebElement
 	WebElement drag = driver.findElement(By.xpath("//*[text()=' BANK ']"));
@@ -35,9 +34,7 @@ public class DragAndDrop {
 		//and pass both the stored WebElements as parameters to perform the action.
 	ac.dragAndDrop(drag, drop).build().perform();
 	
-	
-	
-	
+
 	
 	//No need (Same process)
 	//Second Element
