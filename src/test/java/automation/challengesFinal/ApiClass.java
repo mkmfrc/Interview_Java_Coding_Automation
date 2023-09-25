@@ -35,10 +35,10 @@ import org.testng.annotations.Test;
 		//Implementation:
 		//1. First we have to import few static imports which are related with BDD format
 		
-		//domain- Company website "https://jsonplaceholder.typicode.com"
+		//domain- Company website 
 		public String domain = "https://jsonplaceholder.typicode.com";
 		
-		//URI = specific page "/posts/"
+		//URI = specific page
 		public String URI = "/posts/";
 		
 		//queryString = specific user/requirement "2";
@@ -56,7 +56,7 @@ import org.testng.annotations.Test;
 			
 			//4. Then() method is to validate all the required validation point
 			//Example: Status Code, Status Line, Body, Contain Type, Response Time, Response Size and many more 
-			.then().assertThat()
+			.then()
 			 .statusCode(200)
 			.statusLine("HTTP/1.1 200 OK")
 			.time(lessThan(900l) )
