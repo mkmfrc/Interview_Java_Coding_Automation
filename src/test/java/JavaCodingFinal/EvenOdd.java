@@ -15,7 +15,10 @@ public class EvenOdd {
 				System.out.println(i);
 		}}}
 	
-	public void practice() {
+	public boolean practice() {
+		
+		
+		return false;
 		
 	}
 	

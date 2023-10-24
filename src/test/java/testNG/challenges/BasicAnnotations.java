@@ -33,7 +33,7 @@ public class BasicAnnotations {
 	}
 	@Test
 	public void getTest() {
-		System.out.println("Run Test");
+		System.out.println("Run main Test step");
 	}
 	@AfterMethod
 	public void getAfterMethod() {

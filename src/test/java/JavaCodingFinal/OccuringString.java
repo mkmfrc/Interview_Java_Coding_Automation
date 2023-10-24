@@ -1,4 +1,4 @@
-package JavaCodingFinal;
+ package JavaCodingFinal;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +13,7 @@ public class OccuringString {
 	public void getOccuringStreing() {
 
 			// Declaring the String variable as per desired value
-		String str = "United State of America";
+		String str = "United States of America";
 
 			// Using HashMap from Collection framework to create Object 
 			// and passing the Character, Integer as Key & Value pair

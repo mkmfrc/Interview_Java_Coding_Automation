@@ -16,11 +16,11 @@ import org.testng.annotations.Test;
 		//1st we have to add RestAssured , JSON Sample, GSON 
 		//and many more dependencies in pom.xml as per requirements
 		
-		//Inside the ParentClass we initialize all the prerequisites
-		//Inside separate API Utility class We create all the CURD operation functions
-		//Then we call all the API(End Points/URL)one by one for execute the CURD operations
+		//Inside the ParentClass I initialize all the prerequisites
+		//Inside separate API Utility class I create all the CURD operation functions
+		//Then I call all the API(End Points/URL)one by one for execute the CURD operations
 		
-		//Also we have reusable functions to validate all the response
+		//Also I have reusable functions to validate all the response
 		//Example: Status Code, Status Line, Body, Contain Type, Response Time, Response Size and many more functions
 		//In order to perform  API testing I have to validate every single point as there is no UI.
 		
@@ -47,15 +47,16 @@ import org.testng.annotations.Test;
 		@Test
 		public void getReadTheDataFromServer() {
 			
-			//2. Given() method is prerequisites to pass the param() to check the Content Type  which is JSON or XML
+	//2. Given() method is prerequisites to pass the param() 
+		//to check the Content Type which is JSON or XML
 			given().param("Content-Type", "application/json; charset=utf-8")
 			 
-			 //3. When() method to provide the action where I select the CURD operation method 
-			 //and pass(domain+URI+queryString)as parameter
+	//3. When() method to provide the action where I select the CURD operation method 
+		//and pass(domain+URI+queryString)as parameter
 			.when().get(domain+URI+queryString)
 			
-			//4. Then() method is to validate all the required validation point
-			//Example: Status Code, Status Line, Body, Contain Type, Response Time, Response Size and many more 
+	//4. Then() method is to validate all the required validation point
+		//Example: Status Code, Status Line, Body, Contain Type, Response Time, Response Size and many more 
 			.then()
 			 .statusCode(200)
 			.statusLine("HTTP/1.1 200 OK")

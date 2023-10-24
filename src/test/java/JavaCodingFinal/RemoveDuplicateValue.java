@@ -10,31 +10,32 @@ public class RemoveDuplicateValue {
 
 	// Question 8: How to remove duplicate value from Array or ArrayList?
 	// @Test
-	//Using LIST
-	public void getRemoveDuplicateList() {
+	// Using LIST
 
-		Integer[] value = {1, 2, 3, 2, 1, 4, 5, 4};
+	static Integer[] value = { 1, 2, 3, 2, 1, 4, 5, 4 };
+
+	public void getRemoveDuplicateList() {
 		
+
 		List<Integer> removeDup = Arrays.asList(value);
 
 		List<Integer> newDup = removeDup.stream().distinct().collect(Collectors.toList());
 		System.out.println("Duplicate Value is : " + newDup);
 	}
-	
-	//Using SET
-	void removeDuplicateUsingSet() {
+
+	// Using SET
+	public static void removeDuplicateUsingSet() {
 		
-		 Integer[] value = {1, 2, 3, 2, 1, 4, 5, 4};
-	        
-	        // Step 1: Convert the array to a Set and store the array 
-	        //set will store and automatically remove the duplicate 
-	        Set<Integer> uniqueSet = new HashSet<>(Arrays.asList(value));
-	        
-	        // Step 2: Convert back to Array
-	        Object[] fast = uniqueSet.toArray();
-	        
-	        // Print the unique list
-	        System.out.println(Arrays.toString(fast));
+		// Step 1: Convert the array to a Set and store the array
+		// set will store and automatically remove the duplicate
+
+		Set<Integer> uniqueSet = new HashSet<>(Arrays.asList(value));
+
+		// Step 2: Convert back to Array
+		Object[] fast = uniqueSet.toArray();
+
+		// Print the unique list
+		System.out.println(Arrays.toString(fast));
 
 	}
 

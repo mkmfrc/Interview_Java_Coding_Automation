@@ -32,8 +32,12 @@ public class DropDown {
 		//1. Now  declaring the Select Class Object
 			//and on parameter I am passing the WebElement object
 			
-			Select obj = new Select(dropDown);
+		Select obj = new Select(dropDown);
 		
+			
+				 // Get the total number of options in the dropdown
+				int count = obj.getOptions().size();      
+	        
 		//2. Now using Select class object I can call selectByIndex() and pass the index number
 		//or selectByVisibleText() or selectByValue()
 		

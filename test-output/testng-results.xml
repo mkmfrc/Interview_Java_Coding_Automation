@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-23T22:46:32Z" name="Default suite" finished-at="2023-09-23T22:46:34Z" duration-ms="1684">
+  <suite started-at="2023-10-24T05:02:34Z" name="Default suite" finished-at="2023-10-24T05:02:34Z" duration-ms="30">
     <groups>
     </groups>
-    <test started-at="2023-09-23T22:46:32Z" name="Default test" finished-at="2023-09-23T22:46:34Z" duration-ms="1684">
-      <class name="automation.challengesFinal.API_Auth_Test">
-        <test-method signature="basicPreemptiveAuthticantion()[pri:0, instance:automation.challengesFinal.API_Auth_Test@7e5c856f]" started-at="2023-09-23T22:46:32Z" name="basicPreemptiveAuthticantion" finished-at="2023-09-23T22:46:34Z" duration-ms="1662" status="PASS">
+    <test started-at="2023-10-24T05:02:34Z" name="Default test" finished-at="2023-10-24T05:02:34Z" duration-ms="30">
+      <class name="JavaCodingFinal.Vowels">
+        <test-method signature="getFindVowels()[pri:0, instance:JavaCodingFinal.Vowels@1efe439d]" started-at="2023-10-24T05:02:34Z" name="getFindVowels" finished-at="2023-10-24T05:02:34Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basicPreemptiveAuthticantion -->
-      </class> <!-- automation.challengesFinal.API_Auth_Test -->
+        </test-method> <!-- getFindVowels -->
+      </class> <!-- JavaCodingFinal.Vowels -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

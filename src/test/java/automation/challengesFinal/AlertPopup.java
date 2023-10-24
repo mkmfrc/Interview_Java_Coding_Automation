@@ -19,8 +19,10 @@ package automation.challengesFinal;
 
 	      //Alert Handle
 	      
-	        // First Creating the Alert Interface instance 
-	        //than driver.switchTo() & alert() methods I will take control of the alert popup
+	      //By using Alert interface I can handle alert popup
+	      
+	        // First using driver.switchTo() & alert() methods 
+	      	//and store into Alert interface instance to take control of the alert popup
 	        Alert alert = driver.switchTo().alert();
 
 	        // By calling getText() method to get the text of the alert message
@@ -30,7 +32,7 @@ package automation.challengesFinal;
 	        alert.sendKeys("7989");
 	        
 	        // Finally Accept or Dismiss the alert 
-	        alert.accept(); // alert.dismiss();
+	        alert.accept(); //or  alert.dismiss();
 
 	        // Close the WebDriver
 	        driver.quit();

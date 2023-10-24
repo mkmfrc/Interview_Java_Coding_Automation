@@ -20,7 +20,8 @@ public class DuplicateValueFromArray {
 		}
 	}
 	
-	public void practice() {
-
+	public void practice(String name) {
+		
+	
 	}
 }

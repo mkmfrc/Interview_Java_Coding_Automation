@@ -9,16 +9,16 @@ public class SecondHighQWithoutSort {
 	public static void main(String[] args) {
 
 		// 1st we need to create an Array to declare the values
-		int[] second = { 100, 300, 50, 600, 800 };
+		Integer[] value = { 100, 300, 50, 600, 800 };
 		
 			// then i can create the object of TreeSet class from Java Collection
 			// because of TreeSet auto organize the data.
 		TreeSet<Integer> treeSet = new TreeSet<>();
 		
-			// now with the help of Array class i can call the stream method from java 8+
-			// then pass the argument as Array variable. after i can call the forEach method
-			// to the loop the values
-		Arrays.stream(second).forEach(treeSet::add);
+			// now with the help of Arrays class i can call the stream() method from java 8+
+			// then pass the argument as Array variable. 
+			//after i can call the forEach method to loop the values
+		Arrays.stream(value).forEach(treeSet::add);
 		
 			// with the help of TreeSet object i can call the last method
 			// which is remove the highest value

@@ -34,9 +34,9 @@ public class PracticeA {
 	//Create one return method which returns either true or false if number is greater or less?
 	
 	
-		public static boolean greaterNumber(int num) {
+		public static boolean evenOdd(int num) {
 			
-			if(num > 10) {
+			if(num%2==0) {
 				return true;
 			}else {
 				
@@ -46,7 +46,7 @@ public class PracticeA {
 			
 		public static void main(String[] args) {
 			
-			System.out.println(greaterNumber(10));
+			System.out.println(evenOdd(10));
 			
 		}
 			

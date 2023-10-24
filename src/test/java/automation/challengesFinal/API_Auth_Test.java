@@ -5,15 +5,15 @@ import static io.restassured.RestAssured.*;
 // import static org.hamcrest.Matcher.*;
 
 public class API_Auth_Test {
-	// How many way do you can pass the Authticantion?
-	// There many way i can pass the Authticantion example:
-	// basic Authticantion
+	// How many way do you can pass the Authentication?
+	// There many way i can pass the Authentication example:
+	// basic Authentication
 	// bearer token
 	// auth 0.2 and many more
 	// In my project i am used the bearer token
 
-	// How to pass the basic Authticantion?
-	// basic Authticantion = username & password
+	// How to pass the basic Authentication?
+	// basic Authentication = username & password
 
 	// How to pass bearer token?
 	// it means API token
@@ -26,19 +26,24 @@ public class API_Auth_Test {
 	// @Test
 	public void authTwoAndToken() {
 		String getUrl = url + "/user/repos";
-		given().auth().oauth2(apiToken).when().get(getUrl).then().log().body();
+		given().auth().oauth2(apiToken)
+			.when().get(getUrl)
+				.then().log().body();
 	}
 
-	// If authicantication is failed i get the error message
+	// If authentication is failed i get the error message
 	// 401 Unauthorized
 	@Test
 	public void basicPreemptiveAuthticantion() {
-		given().auth().preemptive().basic("postman", "password").when().get(basicsAuth). //
+		given().auth().preemptive().basic("postman", "password")
+			.when().get(basicsAuth). //
 				then().log().body();
 	}
 
 	// @Test
 	public void basicChlangesAuthticantion() {
-		given().auth().basic("postman", "password").when().get(basicsAuth).then().log().body();
+		given().auth().basic("postman", "password")
+			.when().get(basicsAuth)
+				.then().log().body();
 	}
 }

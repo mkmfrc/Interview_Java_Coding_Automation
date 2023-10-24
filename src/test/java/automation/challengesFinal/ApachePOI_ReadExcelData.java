@@ -46,7 +46,7 @@ public class ApachePOI_ReadExcelData {
 		rowiterator.next();
 
 		//6. I have to create an ArrayList obj to handle the multiple data from Excel
-		List<String> data = new ArrayList<String>();
+		ArrayList<String> data = new ArrayList<String>();
 
 		//7. I have to create a loop to looping all data and again ignore the header using hasNext()
 		while (rowiterator.hasNext()) {
@@ -58,10 +58,11 @@ public class ApachePOI_ReadExcelData {
 		
 		
 		
-		// deserialization
-				// FileOutputStream output = new FileOutputStream(".xls");
+		// Serialization
+				// FileOutputStream output = new FileOutputStream(filePath);
 
-				// serialization
+		// Deserialization
+				// FileInputStream input = new FileInputStream(filePath);
 				
 				
 	}

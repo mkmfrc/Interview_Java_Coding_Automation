@@ -22,7 +22,7 @@ public class ScrollDownScrollUp {
 		
 		//1. First creating an Actions class object and pass the driver as parameter
 		 Actions ac = new Actions(driver);
-		 
+	
 		 //Using the object i can call sendKeys() method
 		 //and in parameter i can pass Keys.PAGE_DOWN to perform required action 
 		 

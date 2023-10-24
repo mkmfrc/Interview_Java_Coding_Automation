@@ -23,3 +23,4 @@ public class ScreenShot {
 		FileHandler.copy(source, new File("./Screenshots/" + screenshotName + ".png"));
 	}
 }
+

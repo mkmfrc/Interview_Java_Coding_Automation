@@ -27,10 +27,10 @@ public class BrokenLinks {
 	//2. Use the loop to go through all the links
 		for (int i = 0; i < links.size(); i++) {
 
-	//2. Retrieve the WebElement at index 'i' using get()
+	//2. Retrieve the WebElement at index 'i' using get() method
 			WebElement ele = links.get(i);
 			
-	//3.getAttribute("href") to identify the exact link 
+	//3. Call getAttribute("href")method to identify the exact link 
 			String linkUrl = ele.getAttribute("href");
 
 	//4. 

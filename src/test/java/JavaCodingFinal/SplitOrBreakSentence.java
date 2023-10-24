@@ -10,7 +10,7 @@ public class SplitOrBreakSentence {
 		String name = "United State of America";
 
 			// 2. Inside the loop we have call split method
-			// and inside the parenthesis we have to pass the space based on requirements
+			// and inside the parameter I have to pass the space based on requirements
 		for (String newValue : name.split(" ")) {
 			System.out.println(newValue);
 		}
